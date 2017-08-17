@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Materialize Css Carousel Slider</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+<!-- Slideshow Goes here -->
+  <div class="carousel carousel-slider center" data-indicators="true">
+  		
+    <div class="carousel-fixed-item valign-wrapper" style="bottom: 50%;">
+      <a onclick="$('.carousel').carousel('prev');" style="margin-right: auto;" class="identifier left left-align btn black hoverable waves-effect"><i class="material-icons">navigate_before</i></a>
+      <a onclick="$('.carousel').carousel('next');" style="margin-left: auto;" class="identifier right right-align btn black hoverable waves-effect"><i class="material-icons">navigate_next</i></a>
+    </div>
+  	
+    <div class="carousel-item ref white-text" id="#one!">
+      <img class="responsive-img" src="http://lorempixel.com/1000/500/" style="height: 500px;"/>
+      <div class="embedded">
+      	<h1 class="center">Heading for Slide One</h1>
+      	<p>This can be any text that you would like to put</p>
+      </div>
+    </div>
+    <div class="carousel-item ref white-text" id="#two!">
+      <img class="responsive-img" src="http://lorempixel.com/900/500/" style="height: 500px;"/>
+      <div class="embedded">
+      	<h1 class="center">Heading for Slide Two</h1>
+      	<p>This can be any text that you would like to put</p>
+      </div>
+    </div>
+    <div class="carousel-item ref white-text" id="#three!">
+      <img class="responsive-img" src="http://lorempixel.com/800/500/" style="height: 500px;"/>
+      <div class="embedded">
+      	<h1 class="center">Heading for Slide Three</h1>
+      	<p>This can be any text that you would like to put</p>
+      </div>
+    </div>
+    <div class="carousel-item ref white-text" id="#four!">
+      <img class="responsive-img" src="http://lorempixel.com/700/500/" style="height: 500px;"/>
+      <div class="embedded">
+      	<h1 class="center">Heading for Slide Four</h1>
+      	<p>This can be any text that you would like to put</p>
+      </div>
+    </div>
+    <div class="carousel-item ref white-text" id="#five!">
+      <img class="responsive-img" src="http://lorempixel.com/750/500/" style="height: 500px;"/>
+      <div class="embedded">
+      	<h1 class="center">Heading for Slide Five</h1>
+      	<p>This can be any text that you would like to put</p>
+      </div>
+    </div>
+  </div>
+<!-- Slideshow Ends -->
+
+<script>
+$(document).ready(function(){
+	$(".button-collapse").sideNav();
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
+});
+	
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
